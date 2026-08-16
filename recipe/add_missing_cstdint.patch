@@ -1,12 +1,3 @@
-From 83357ceef71ca530606da005f82666d4835ea199 Mon Sep 17 00:00:00 2001
-From: Silvio Traversaro <silvio@traversaro.it>
-Date: Mon, 17 Aug 2026 00:11:12 +0200
-Subject: [PATCH] Add include for cstdint in Profiler.hh
-
----
- profiler/include/gz/common/Profiler.hh | 1 +
- 1 file changed, 1 insertion(+)
-
 diff --git a/profiler/include/gz/common/Profiler.hh b/profiler/include/gz/common/Profiler.hh
 index ef218f83f..d47b1f463 100644
 --- a/profiler/include/gz/common/Profiler.hh
@@ -19,3 +10,15 @@ index ef218f83f..d47b1f463 100644
  #include <memory>
  #include <string>
  
+diff --git a/include/gz/common/Battery.hh b/include/gz/common/Battery.hh
+index 05786e9e1..7e048628e 100644
+--- a/include/gz/common/Battery.hh
++++ b/include/gz/common/Battery.hh
+@@ -17,6 +17,7 @@
+ #ifndef GZ_COMMON_BATTERY_HH_
+ #define GZ_COMMON_BATTERY_HH_
+ 
++#include <cstdint>
+ #include <map>
+ #include <string>
+ #include <functional>
